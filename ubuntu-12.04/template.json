@@ -6,19 +6,19 @@
       "override": {
         "virtualbox-iso": {
           "scripts": [
-            "scripts/base.sh",
-            "scripts/vagrant.sh",
-            "scripts/virtualbox.sh",
-            "scripts/cleanup.sh",
-            "scripts/zerodisk.sh"
+            "../shared/ubuntu/scripts/base.sh",
+            "../shared/ubuntu/scripts/vagrant.sh",
+            "../shared/ubuntu/scripts/virtualbox.sh",
+            "../shared/ubuntu/scripts/cleanup.sh",
+            "../shared/ubuntu/scripts/zerodisk.sh"
           ]
         },
         "vmware-iso": {
           "scripts": [
-            "scripts/base.sh",
-            "scripts/vagrant.sh",
-            "scripts/cleanup.sh",
-            "scripts/zerodisk.sh"
+            "../shared/ubuntu/scripts/base.sh",
+            "../shared/ubuntu/scripts/vagrant.sh",
+            "../shared/ubuntu/scripts/cleanup.sh",
+            "../shared/ubuntu/scripts/zerodisk.sh"
           ]
         }
       }
@@ -67,7 +67,7 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "Ubuntu_64",
-      "http_directory": "http",
+      "http_directory": "../shared/ubuntu/http",
       "iso_url": "http://releases.ubuntu.com/12.04/ubuntu-12.04.4-server-amd64.iso",
       "iso_checksum": "3aeb42816253355394897ae80d99a9ba56217c0e98e05294b51f0f5b13bceb54",
       "iso_checksum_type": "sha256",
@@ -110,7 +110,7 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "linux",
-      "http_directory": "http",
+      "http_directory": "../shared/ubuntu/http",
       "iso_url": "http://releases.ubuntu.com/12.04/ubuntu-12.04.3-server-amd64.iso",
       "iso_checksum": "61d5e67c70d97b33c13537461a0b153b41304ef412bb0e9d813bb157068c3c65",
       "iso_checksum_type": "sha256",
