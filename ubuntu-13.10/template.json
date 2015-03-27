@@ -6,20 +6,20 @@
       "override": {
         "virtualbox-iso": {
           "scripts": [
-            "scripts/base.sh",
-            "scripts/vagrant.sh",
-            "scripts/virtualbox.sh",
-            "scripts/cleanup.sh",
-            "scripts/zerodisk.sh"
+            "../shared/ubuntu/scripts/base.sh",
+            "../shared/ubuntu/scripts/vagrant.sh",
+            "../shared/ubuntu/scripts/virtualbox.sh",
+            "../shared/ubuntu/scripts/cleanup.sh",
+            "../shared/ubuntu/scripts/zerodisk.sh"
           ]
         },
         "vmware-iso": {
           "scripts": [
-            "scripts/base.sh",
-            "scripts/vagrant.sh",
-            "scripts/vmware.sh",
-            "scripts/cleanup.sh",
-            "scripts/zerodisk.sh"
+            "../shared/ubuntu/scripts/base.sh",
+            "../shared/ubuntu/scripts/vagrant.sh",
+            "../shared/ubuntu/scripts/vmware.sh",
+            "../shared/ubuntu/scripts/cleanup.sh",
+            "../shared/ubuntu/scripts/zerodisk.sh"
           ]
         }
       }
@@ -68,7 +68,7 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "Ubuntu_64",
-      "http_directory": "http",
+      "http_directory": "../shared/ubuntu/http",
       "iso_checksum": "4d1a8b720cdd14b76ed9410c63a00d0e",
       "iso_checksum_type": "md5",
       "iso_url": "http://releases.ubuntu.com/13.10/ubuntu-13.10-server-amd64.iso",
@@ -111,7 +111,7 @@
       "boot_wait": "10s",
       "disk_size": 40960,
       "guest_os_type": "linux",
-      "http_directory": "http",
+      "http_directory": "../shared/ubuntu/http",
       "iso_checksum": "4d1a8b720cdd14b76ed9410c63a00d0e",
       "iso_checksum_type": "md5",
       "iso_url": "http://releases.ubuntu.com/13.10/ubuntu-13.10-server-amd64.iso",
